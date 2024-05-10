@@ -188,6 +188,88 @@ html{
     background-color:  #f7c08a;
 }
 
+/* About Page
+
+/* Main Section Styles */
+#aboutsec1 {
+    display: grid;
+    padding-top: 5%;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    color: white;
+    background-color: #4f4e53;
+}
+
+#sec1grid {
+    padding: 50px;
+    
+}
+
+#sec1gridpic {
+    text-align: center;
+}
+
+#sec1gridpic img {
+    max-width: 60%;
+    border-radius: 20px;    
+}
+
+#aboutsec2 {
+    padding: 20px;
+    background-color: #333;
+}
+
+#aboutsec2  h2{
+    text-align: center;
+    color: white;
+    padding-bottom: 3%;
+}
+
+#aboutsec2one {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    gap: 20px;
+}
+
+#aboutsec2one p {
+    display: grid;
+    gap: 20px;
+    font-size: 1.8rem;
+    text-align: center;
+    padding: 5%;
+    border-radius: 10px;
+    background-color: #4f4e53;
+    color: white;
+    image-rendering: none;
+}
+
+#sectwopic img {
+    max-width: 60%;
+    border-radius: 600px;
+}
+/* About Page End */
+
+@media screen and (max-width: 768px) {
+    /* Adjust grid layout for smaller screens */
+    #aboutsec1 {
+        grid-template-columns: 1fr;
+    }
+
+    /* Make images responsive */
+    #sec1gridpic img,
+    #sectwopic img {
+        max-width: 100%;
+        height: auto;
+        
+    }
+
+    /* Adjust font sizes for readability */
+    #sec1grid h1,
+    #aboutsec2 h2,
+    #aboutsec2one p {
+        font-size: 1.5rem;
+    }
+}
 
  
 /* Responsive adjustments  to grid for smaller screens */
