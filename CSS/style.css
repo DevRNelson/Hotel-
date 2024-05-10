@@ -93,8 +93,8 @@ html{
     padding: 20px;
     text-align: center;
     border: 5px #333;
-    margin-left: 45%;
-    margin-top: 2%;
+    display: block;
+    margin: 0 auto;
     color: white;
 }
 
@@ -192,6 +192,10 @@ html{
  
 /* Responsive adjustments  to grid for smaller screens */
 @media screen and (max-width: 768px) {
+    #BOXPIC {
+        grid-template-columns: 1fr 1fr;
+        height: 250px;   
+    }
     .GRIDS {
         grid-template-columns: 1fr;
         height: auto;
@@ -203,6 +207,57 @@ html{
 
     #BOXTEXT {
         padding-top: 10%;
+        padding-bottom: 5%;
+    }
+
+    .GRIDS button {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .GRIDS2 {
+        grid-template-columns: 1fr;
+        height: auto;
+    }
+
+    .GRIDS2 p {
+        padding-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .class1 h1{
+        font-size: 2rem;
+        color: white;
+        text-align: center;
+        padding-top: 250px; 
+        line-height: 1.7rem;
+    }
+    .class1 {
+        margin-top: 1%;
+        background-image: url(../IMAGES/showcase.jpg);
+        width: 100%;
+        height:300px;
+        padding-bottom: 400px;
+    }
+    
+
+    #BOXPIC {
+        grid-template-columns: 1fr 1fr;
+        height: 250px;   
+    }
+    .GRIDS {
+        grid-template-columns: 1fr;
+        height: auto;
+    }
+
+    #gridpic {
+        height: auto;
+    }
+
+    #BOXTEXT {
+        padding-top: 10%;
+        padding-bottom: 5%;
     }
 
     .GRIDS button {
