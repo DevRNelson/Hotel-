@@ -189,9 +189,34 @@ html{
 }
 
 
+ 
+/* Responsive adjustments  to grid for smaller screens */
+@media screen and (max-width: 768px) {
+    .GRIDS {
+        grid-template-columns: 1fr;
+        height: auto;
+    }
 
+    #gridpic {
+        height: auto;
+    }
+
+    #BOXTEXT {
+        padding-top: 10%;
+    }
+
+    .GRIDS button {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .GRIDS2 {
+        grid-template-columns: 1fr;
+        height: auto;
+    }
+
+    .GRIDS2 p {
+        padding-bottom: 20px;
+    }
+}
 /* END OF THE HOME PAGE CSS */
-
-
-
-/* BEGINNI
